@@ -7,7 +7,7 @@ from dirs import directories
 
 print(directories)
 
-ip = "192.168.11.215"
+ip = "192.168.1.233"
 
 base_path = "/home/szzh/git"
 
@@ -24,7 +24,7 @@ for dir in directories:
         f"//{ip}/git/{dir}.git",
         git_dir,
         "-o",
-        "username=szzh,password=1",
+        "username=summer,password=wangbinio",
     ]
     print(command)
     subprocess.run(command)

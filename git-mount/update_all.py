@@ -11,6 +11,8 @@ base_dirs = directories[:2]
 base_path = "/home/szzh"
 biandao_path=f"{base_path}/biandao_code"
 
+os.makedirs(biandao_path, exist_ok=True)
+
 for dir in directories:
     target_dir = ""
     if dir in base_dirs:
