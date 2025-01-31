@@ -3,11 +3,9 @@
 import os
 import subprocess
 
-from dirs import directories
+from dirs import *
 
 print(directories)
-
-ip = "192.168.1.233"
 
 base_path = "/home/szzh/git"
 

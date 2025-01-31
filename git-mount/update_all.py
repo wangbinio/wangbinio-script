@@ -3,7 +3,7 @@
 import os
 import subprocess
 
-from dirs import directories
+from dirs import *
 
 print(directories)
 
