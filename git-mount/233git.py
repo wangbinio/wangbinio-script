@@ -7,6 +7,8 @@ from dirs import *
 
 print(directories)
 
+ip = "192.168.233.1"
+
 base_path = "/home/szzh/git"
 
 os.makedirs(base_path, exist_ok=True)

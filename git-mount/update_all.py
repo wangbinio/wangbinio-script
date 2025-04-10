@@ -7,19 +7,12 @@ from dirs import *
 
 print(directories)
 
-base_dirs = directories[:3]
 base_path = "/home/szzh"
-biandao_path=f"{base_path}"
 
-os.makedirs(biandao_path, exist_ok=True)
+os.makedirs(base_path, exist_ok=True)
 
 for dir in directories:
-    target_dir = ""
-    if dir in base_dirs:
-        target_dir = f"{base_path}/{dir}"
-    else:
-        target_dir = f"{biandao_path}/{dir}"
-    
+    target_dir = f"{base_path}/{dir}"
     command = ""    
     if os.path.isdir(target_dir):
         command = f"git -C {target_dir} pull"
