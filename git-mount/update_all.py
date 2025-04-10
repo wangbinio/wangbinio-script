@@ -7,9 +7,9 @@ from dirs import *
 
 print(directories)
 
-base_dirs = directories[:2]
+base_dirs = directories[:3]
 base_path = "/home/szzh"
-biandao_path=f"{base_path}/biandao_code"
+biandao_path=f"{base_path}"
 
 os.makedirs(biandao_path, exist_ok=True)
 

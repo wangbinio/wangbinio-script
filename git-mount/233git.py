@@ -22,7 +22,7 @@ for dir in directories:
         f"//{ip}/git/{dir}.git",
         git_dir,
         "-o",
-        "username=summer,password=wangbinio",
+        "username=szzh,password=1",
     ]
     print(command)
     subprocess.run(command)
