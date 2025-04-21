@@ -11,7 +11,8 @@ def gbk2utf8(file):
         print(f'{file} seens not gbk encoded!!!')
         return False
     with open(file, 'rb') as f:
-        content = f.read().decode('gbk', errors='ignore')
+        # content = f.read().decode('gbk', errors='ignore')
+        content = f.read().decode('gbk')
     with open(file, 'w', encoding='utf-8', newline='') as f:
         f.write(content)
         return True
@@ -20,9 +21,9 @@ def gbk2utf8(file):
 def trans_dir_files(dir):
     for root, dirs, files in os.walk(dir):
         for file in files:
-            # if file.endswith('.h') or file.endswith('.cpp'):
-            if gbk2utf8(os.path.join(root, file)):
-                print(f'convert {file} to utf-8')
+            if file.endswith('.h') or file.endswith('.cpp'):
+                if gbk2utf8(os.path.join(root, file)):
+                    print(f'convert {file} to utf-8')
                 
                 
 if __name__ == '__main__':
